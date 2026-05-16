@@ -15,7 +15,7 @@ Original file is located at
 
 import os
 
-GEMINI_API_KEY = "AIzaSyBizGd3uGknZcreooWV7IcxvI5pReHrfPE"  # paste your API key here
+GEMINI_API_KEY = "YOUR_API_KEY"  # paste your API key here
 
 # checking if key was added properly
 
