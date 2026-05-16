@@ -35,7 +35,7 @@ GEMINI_API_KEY = "YOUR_API_KEY"
 and ensure the model is set to:
 
 ```python
-MODEL_NAME = "gemini-2.5-flash"
+MODEL = "gemini-2.5-flash"
 ```
 
 
