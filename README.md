@@ -18,6 +18,27 @@ The chatbot transforms user inputs into free verse poetry using structured promp
 * Google Gemini API
 * google-genai SDK
 
+## Prerequisites
+
+Before running the chatbot:
+
+* install the required libraries from `requirements.txt`
+* create and add your own Gemini API key
+* use the Gemini 2.5 Flash model for response generation
+
+Update the API key section in the notebook:
+
+```python
+GEMINI_API_KEY = "YOUR_API_KEY"
+```
+
+and ensure the model is set to:
+
+```python
+MODEL_NAME = "gemini-2.5-flash"
+```
+
+
 ## Files
 
 * `poetic-personality-chatbot.ipynb` - main notebook
