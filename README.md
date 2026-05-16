@@ -1,72 +1,52 @@
-# Poetic Personality Chatbot
+Here is the streamlined version with the emojis removed, a shorter introduction, and the setup and customization sections kept intact.
 
-This project explores prompt engineering and conversational AI using Google's Gemini API.
+---
 
-The chatbot transforms user inputs into free verse poetry using structured prompts and LLM-generated responses.
+# LYRA: Poetic Personality Chatbot
+
+LYRA is a conversational AI script built using Colab and the Google Gemini API. Powered by the `gemini-2.5-flash` model, LYRA responds to all user inputs exclusively in 4-6 line emotional, lyrical free-verse poetry.
 
 ## Features
 
-* Conversational poetic chatbot
-* Prompt-engineered personality and tone
-* Typing animation effect
-* Context-aware conversation history
-* Gemini API integration
-
-## Technologies Used
-
-* Python
-* Google Gemini API
-* google-genai SDK
+* **Poetic Persona**
+* **Context Awareness:** Remembers the last 10 conversation turns for personalized responses.
+* **Immersive Output:** Custom typing effect.
+* **Interactive Loop & Demo:** Includes an interactive chat loop and test sequence.
 
 ## Prerequisites
 
-Before running the chatbot:
+* **Python 3.7+**
+* A valid **Google Gemini API Key** 
 
-* install the required libraries from `requirements.txt`
-* create and add your own Gemini API key
-* use the Gemini 2.5 Flash model for response generation
+## Installation & Setup
 
-Update the API key section in the notebook:
+1. **Install the required library:**
+Install the official Google GenAI SDK via pip:
+```bash
+pip install google-genai
 
+```
+
+
+2. **Add your API Key:**
+Open `poetic_personality_chatbot.py` in your text editor. Find the following line near the top of the file:
 ```python
 GEMINI_API_KEY = "YOUR_API_KEY"
-```
 
-and ensure the model is set to:
-
-```python
-MODEL = "gemini-2.5-flash"
 ```
 
 
-## Files
+Replace `"YOUR_API_KEY"` with your actual Gemini API key.
 
-* `poetic-personality-chatbot.ipynb` - main notebook
-* `requirements.txt` - required libraries
+## Usage
 
-## Sample Prompt
+* **Chatting:** Type your message and press `Enter`. Wait a moment as LYRA generates and types out a customized poem.
+* **Exiting:** To end the chat and receive a farewell poem, type: `quit`, `exit`, `bye`, `goodbye`, `farewell`, or `stop`.
+* **Demo Mode:** After you exit the chat loop, the script will automatically run a brief demonstration using pre-written inputs to showcase its memory.
 
-Input:
+## Customization
 
-```id="jlwm3p"
-I feel stressed today.
-```
+You can easily tweak the chatbot's personality or behavior by modifying variables within the script:
 
-Output:
-
-```id="jlwm2k"
-The night leans softly against your weary mind,
-Like rain gathering beneath dim city lights.
-Even restless hearts carry hidden constellations,
-Waiting quietly for dawn to arrive.
-```
-
-## Learning Outcome
-
-This project helped me explore:
-
-* prompt engineering
-* conversational AI
-* API integration
-* response generation using LLMs
-* chatbot interaction design
+* **`SYSTEM_PROMPT`**: Change the rules, themes, or line counts to make LYRA write in different styles.
+* **`MAX_HISTORY_TURNS`**: Change the integer value (currently `10`) to increase or decrease the chatbot's memory span.
